@@ -1,0 +1,27 @@
+public class TaskNine {
+    public static void main(String[] args) {
+
+        int totalSum = 0;  
+	int squareSum=0; 
+      
+	  for (int i = 1; i <= 10; i++) {
+
+            if (i % 4 == 0) {
+
+                int value = i;
+                int sum = 0;
+
+                for (int j = 1; j <= 5; j++) {
+                    sum += value;
+                    value = value * i;
+                }
+
+                System.out.println(sum);
+                totalSum += sum;
+		squareSum=totalSum*totalSum;
+            }
+        }
+
+        System.out.println("Final Square: " + squareSum);
+    }
+}

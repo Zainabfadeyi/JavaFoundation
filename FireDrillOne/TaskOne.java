@@ -7,6 +7,7 @@ public class Dreamdev {
 	for(int i=num; i<=100; i++){
 	
 		System.out.print(i+",");
+		
 }
 
     }

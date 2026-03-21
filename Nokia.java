@@ -25,9 +25,9 @@ public class Nokia {
                 """;
 
         System.out.println(mainMenu);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> phoneBook();
             case 2 -> messages();
             case 3 -> System.out.println("Opening Chat...");
@@ -61,9 +61,9 @@ public class Nokia {
                 9. Speed Dials
                 10. Voice Tags
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> System.out.println("Searching...");
             case 2 -> System.out.println("Service Numbers...");
             case 3 -> System.out.println("Add Name...");
@@ -77,8 +77,8 @@ public class Nokia {
                         1. Type of View
                         2. Memory Status
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Type of View...");
                     case 2 -> System.out.println("Memory Status...");
                     default -> System.out.println("Invalid option.");
@@ -104,9 +104,9 @@ public class Nokia {
                 9.  Voice Mailbox Number
                 10. Service Command Editor
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> System.out.println("Write Messages...");
             case 2 -> System.out.println("Opening Inbox...");
             case 3 -> System.out.println("Opening Outbox...");
@@ -119,8 +119,8 @@ public class Nokia {
                         1. Set 1
                         2. Common
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> {
                         System.out.println("""
                                 -- Set 1 --
@@ -128,8 +128,8 @@ public class Nokia {
                                 2. Messages Sent As
                                 3. Message Validity
                                 """);
-                        int sub2 = input.nextInt();
-                        switch (sub2) {
+                        int subst2 = input.nextInt();
+                        switch (subst2) {
                             case 1 -> System.out.println("Message Centre Number...");
                             case 2 -> System.out.println("Messages Sent As...");
                             case 3 -> System.out.println("Message Validity...");
@@ -143,8 +143,8 @@ public class Nokia {
                                 2. Reply Via Same Centre
                                 3. Character Support
                                 """);
-                        int sub2 = input.nextInt();
-                        switch (sub2) {
+                        int subst2 = input.nextInt();
+                        switch (subst2) {
                             case 1 -> System.out.println("Delivery Reports...");
                             case 2 -> System.out.println("Reply Via Same Centre...");
                             case 3 -> System.out.println("Character Support...");
@@ -173,9 +173,9 @@ public class Nokia {
                 7. Call Cost Settings
                 8. Prepaid Credit
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> System.out.println("Missed Calls...");
             case 2 -> System.out.println("Received Calls...");
             case 3 -> System.out.println("Dialled Numbers...");
@@ -189,8 +189,8 @@ public class Nokia {
                         4. Dialled Calls' Duration
                         5. Clear Timers
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Last Call Duration...");
                     case 2 -> System.out.println("All Calls' Duration...");
                     case 3 -> System.out.println("Received Calls' Duration...");
@@ -206,8 +206,8 @@ public class Nokia {
                         2. All Calls' Cost
                         3. Clear Counters
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Last Call Cost...");
                     case 2 -> System.out.println("All Calls' Cost...");
                     case 3 -> System.out.println("Counters cleared.");
@@ -220,8 +220,8 @@ public class Nokia {
                         1. Call Cost Limit
                         2. Show Costs In
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Call Cost Limit...");
                     case 2 -> System.out.println("Show Costs In...");
                     default -> System.out.println("Invalid option.");
@@ -245,9 +245,9 @@ public class Nokia {
                 8. Vibrating Alert
                 9. Screen Saver
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> System.out.println("Ringing Tone...");
             case 2 -> System.out.println("Ringing Volume...");
             case 3 -> System.out.println("Incoming Call Alert...");
@@ -269,9 +269,9 @@ public class Nokia {
                 3. Security Settings
                 4. Restore Factory Settings
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> {
                 System.out.println("""
                         -- Call Settings --
@@ -282,8 +282,8 @@ public class Nokia {
                         5. Phone Line in Use
                         6. Automatic Answer
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Automatic Redial...");
                     case 2 -> System.out.println("Speed Dialling...");
                     case 3 -> System.out.println("Call Waiting Options...");
@@ -303,8 +303,8 @@ public class Nokia {
                         5. Lights
                         6. Confirm SIM Service Actions
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("Language...");
                     case 2 -> System.out.println("Cell Info Display...");
                     case 3 -> System.out.println("Welcome Note...");
@@ -324,8 +324,8 @@ public class Nokia {
                         5. Phone Security
                         6. Change Access Codes
                         """);
-                int sub = input.nextInt();
-                switch (sub) {
+                int subst = input.nextInt();
+                switch (subst) {
                     case 1 -> System.out.println("PIN Code Request...");
                     case 2 -> System.out.println("Call Barring Service...");
                     case 3 -> System.out.println("Fixed Dialling...");
@@ -350,9 +350,9 @@ public class Nokia {
                 5. Countdown Timer
                 6. Auto Update of Date and Time
                 """);
-        int choice = input.nextInt();
+        int choiceMade = input.nextInt();
 
-        switch (choice) {
+        switch (choiceMade) {
             case 1 -> System.out.println("Alarm Clock...");
             case 2 -> System.out.println("Clock Settings...");
             case 3 -> System.out.println("Date Setting...");

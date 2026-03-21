@@ -1,4 +1,4 @@
-public class TaskSeven {
+public class TaskEight {
     public static void main(String[] args) {
 
         int totalSum = 0;         

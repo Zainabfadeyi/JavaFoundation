@@ -8,7 +8,7 @@ public class PizzaWahala{
     static int[]    slicesPerBox = {4, 6, 8, 12};
     static int[]    pricePerBox  = {2500, 2900, 4000, 5200};
 
-    // ─── Extracted logic — easy to test ──────────────────────────────────────
+
     public static int[] calculateOrder(int guests, int choice) {
         int index      = choice - 1;
         int slices     = slicesPerBox[index];
@@ -18,11 +18,11 @@ public class PizzaWahala{
         int leftover   = totalSlices - guests;
         int totalPrice = boxes * price;
 
-        // returns [boxes, totalSlices, leftover, totalPrice]
+     
         return new int[]{boxes, totalSlices, leftover, totalPrice};
     }
 
-    // ─── Main — handles Scanner I/O only ─────────────────────────────────────
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

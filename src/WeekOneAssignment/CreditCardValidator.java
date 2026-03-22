@@ -77,7 +77,7 @@ public class CreditCardValidator {
                 && isValidLuhn(cardNumber);
     }
 
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

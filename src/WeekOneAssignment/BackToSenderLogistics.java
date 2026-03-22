@@ -1,6 +1,7 @@
 package src.WeekOneAssignment;
 
 public class BackToSenderLogistics {
+
     public static int calculateRiderWage(int successfulDeliveries) {
         final int BASE_PAY = 5000;
         final int TOTAL_PACKAGES = 100;
@@ -20,5 +21,10 @@ public class BackToSenderLogistics {
         }
 
         return successfulDeliveries * amountPerParcel + BASE_PAY;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(calculateRiderWage(80));
+        System.out.println(calculateRiderWage(25));  
     }
 }

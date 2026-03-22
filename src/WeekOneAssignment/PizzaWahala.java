@@ -18,7 +18,7 @@ public class PizzaWahala{
         int leftover   = totalSlices - guests;
         int totalPrice = boxes * price;
 
-     
+
         return new int[]{boxes, totalSlices, leftover, totalPrice};
     }
 

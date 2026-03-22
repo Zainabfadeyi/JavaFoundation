@@ -25,6 +25,6 @@ public class BackToSenderLogistics {
 
     public static void main(String[] args) {
         System.out.println(calculateRiderWage(80));
-        System.out.println(calculateRiderWage(25));  
+        System.out.println(calculateRiderWage(25));
     }
 }

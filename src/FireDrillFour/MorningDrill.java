@@ -22,7 +22,7 @@ public class MorningDrill {
 
         String result = "";
 
-   
+
         if (num >= 1000) {
             result += convertBelowThousand(num / 1000) + " thousand ";
             num %= 1000;

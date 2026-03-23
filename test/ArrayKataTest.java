@@ -224,7 +224,7 @@ public class ArrayKataTest {
         assertArrayEquals(new int[]{}, ArrayKata.oddNumbersIn(duplicates));
     }
 
-    
+
     @Test
     public void testSquareNumbersIn_MixedArray() {
         assertArrayEquals(new int[]{1, 4, 9, 16, 25}, ArrayKata.squareNumbersIn(allSquares));

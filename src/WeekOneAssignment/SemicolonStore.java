@@ -47,6 +47,13 @@ public class SemicolonStore {
         return (subTotal - discount) + vat;
     }
 
+    public static void resetCart() {
+        itemNames  = new String[100];
+        itemQty    = new int[100];
+        itemPrice  = new double[100];
+        itemTotal  = new double[100];
+        itemCount  = 0;
+    }
 
     public static void printInvoice(String customerName, String cashierName, double discount) {
         double subTotal  = calculateSubTotal();

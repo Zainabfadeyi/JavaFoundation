@@ -33,7 +33,7 @@ public class StudentGrade{
     }
 
 
-    private static void collectScores(Scanner scanner, int[][] scores,
+    public static void collectScores(Scanner scanner, int[][] scores,
                                       int totalStudents, int totalSubjects) {
         for (int s = 0; s < totalStudents; s++) {
             for (int sub = 0; sub < totalSubjects; sub++) {
@@ -54,17 +54,17 @@ public class StudentGrade{
     }
 
 
-    private static int studentTotal(int[] studentScores) {
+    public static int studentTotal(int[] studentScores) {
         int total = 0;
         for (int score : studentScores) total += score;
         return total;
     }
 
-    private static double studentAverage(int[] studentScores) {
+    public static double studentAverage(int[] studentScores) {
         return (double) studentTotal(studentScores) / studentScores.length;
     }
 
-    private static int[] allStudentTotals(int[][] scores, int totalStudents) {
+    public static int[] allStudentTotals(int[][] scores, int totalStudents) {
         int[] totals = new int[totalStudents];
         for (int s = 0; s < totalStudents; s++) {
             totals[s] = studentTotal(scores[s]);
@@ -72,7 +72,7 @@ public class StudentGrade{
         return totals;
     }
 
-    private static int[] allStudentPositions(int[] totals, int totalStudents) {
+    public static int[] allStudentPositions(int[] totals, int totalStudents) {
         int[] positions = new int[totalStudents];
         for (int s = 0; s < totalStudents; s++) {
             int position = 1;
@@ -85,7 +85,7 @@ public class StudentGrade{
     }
 
 
-    private static void printScoreTable(int[][] scores, int totalStudents, int totalSubjects) {
+    public static void printScoreTable(int[][] scores, int totalStudents, int totalSubjects) {
         int[] totals    = allStudentTotals(scores, totalStudents);
         int[] positions = allStudentPositions(totals, totalStudents);
 
@@ -111,7 +111,7 @@ public class StudentGrade{
     }
 
 
-    private static void printSubjectSummary(int[][] scores, int totalStudents, int totalSubjects) {
+    public static void printSubjectSummary(int[][] scores, int totalStudents, int totalSubjects) {
         System.out.println("SUBJECT SUMMARY");
 
         for (int sub = 0; sub < totalSubjects; sub++) {
@@ -148,7 +148,7 @@ public class StudentGrade{
     }
 
 
-    private static void printClassSummary(int[][] scores, int totalStudents, int totalSubjects) {
+    public static void printClassSummary(int[][] scores, int totalStudents, int totalSubjects) {
         int[] totals = allStudentTotals(scores, totalStudents);
 
         int bestStudent             = 0;

@@ -164,7 +164,7 @@ public class StudentGradeTest {
     }
 
 
-    
+
     @Test
     public void testTotalsAndPositions_ThreeStudents() {
         int[] totals    = StudentGrade.allStudentTotals(threeStudentsThreeSubjects, 3);

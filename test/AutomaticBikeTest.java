@@ -70,7 +70,7 @@ public class AutomaticBikeTest {
     }
 
 
-    // ─── Gear 1: speed 0 - 20, increment/decrement of 1 ─────────────────────
+
     @Test
     public void testGearOneOnStartup() {
         bike.turnOn();
@@ -172,7 +172,7 @@ public class AutomaticBikeTest {
     }
 
 
-    // ─── Gear 4: speed 41+, increment/decrement of 4 ─────────────────────────
+
     @Test
     public void testGearChangesToFourAt41() {
         bike.turnOn();
@@ -204,7 +204,7 @@ public class AutomaticBikeTest {
     }
 
 
-    // ─── Automatic Gear Changes on Acceleration ───────────────────────────────
+
     @Test
     public void testGearShiftsUpFrom1To2OnAcceleration() {
         bike.turnOn();
@@ -233,7 +233,7 @@ public class AutomaticBikeTest {
     }
 
 
-    // ─── Automatic Gear Changes on Deceleration ───────────────────────────────
+
     @Test
     public void testGearShiftsDownFrom2To1OnDeceleration() {
         bike.turnOn();

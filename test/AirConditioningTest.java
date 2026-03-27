@@ -1,4 +1,4 @@
-package src.WeekOneAssignment;
+package test;
 
 import org.junit.Test;
 import org.junit.Before;
@@ -160,6 +160,7 @@ public class AirConditioningTest {
     }
 
 
+
     @Test
     public void testIncreaseTemperature() {
         ac.turnOn();
@@ -212,6 +213,7 @@ public class AirConditioningTest {
         ac.setTemperature(10);
         assertEquals(16, ac.getTemperature());
     }
+
 
 
     @Test
@@ -358,7 +360,7 @@ public class AirConditioningTest {
     }
 
 
-    // ─── Sleep Mode ───────────────────────────────────────────────────────────
+
     @Test
     public void testEnableSleepMode() {
         ac.turnOn();
@@ -383,7 +385,7 @@ public class AirConditioningTest {
     }
 
 
-    // ─── Swing ────────────────────────────────────────────────────────────────
+
     @Test
     public void testToggleSwingOn() {
         ac.turnOn();
@@ -400,7 +402,7 @@ public class AirConditioningTest {
     }
 
 
-    // ─── Timer ────────────────────────────────────────────────────────────────
+    
     @Test
     public void testSetTimer() {
         ac.turnOn();

@@ -33,7 +33,7 @@ public class AirConditioning {
     }
 
 
-    // ─── Turn On / Off ────────────────────────────────────────────────────────
+
     public void turnOn() {
         on = true;
     }
@@ -52,7 +52,7 @@ public class AirConditioning {
     public boolean isOn() { return on; }
 
 
-    // ─── Temperature ─────────────────────────────────────────────────────────
+
     public void increaseTemperature() {
         if (!on) return;
         if (temperature < MAX_TEMP) temperature++;
@@ -73,7 +73,7 @@ public class AirConditioning {
     public int getTemperature() { return temperature; }
 
 
-    // ─── Mode ─────────────────────────────────────────────────────────────────
+
     public void setMode(String mode) {
         if (!on) return;
         for (String validMode : VALID_MODES) {
@@ -87,7 +87,7 @@ public class AirConditioning {
     public String getMode() { return mode; }
 
 
-    // ─── Fan Speed ────────────────────────────────────────────────────────────
+
     public void setFanSpeed(String fanSpeed) {
         if (!on) return;
         for (String speed : FAN_SPEEDS) {
@@ -121,7 +121,7 @@ public class AirConditioning {
     public String getFanSpeed() { return fanSpeed; }
 
 
-    // ─── Sleep Mode ───────────────────────────────────────────────────────────
+
     public void setSleepMode(boolean sleepMode) {
         if (!on) return;
         this.sleepMode = sleepMode;
@@ -140,7 +140,7 @@ public class AirConditioning {
     public boolean isSwingOn() { return swingOn; }
 
 
-    // ─── Timer ────────────────────────────────────────────────────────────────
+
     public void setTimer(int hours) {
         if (!on) return;
         if (hours <= 0 || hours > 24) return;

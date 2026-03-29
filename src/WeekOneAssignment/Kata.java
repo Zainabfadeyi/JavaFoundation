@@ -57,8 +57,17 @@ public class Kata {
     public static long squareOf(int number) {
         return (long) number * number;
     }
+    public static int lcmOfArrays(int[] numbers) {
+        int result = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            result = lcm(result, numbers[i]);
+        }
+        return result;
+    }
 
-
+    private static int lcm(int result, int number) {
+        return 0;
+    }
 
 
     public static void main(String[] args) {
@@ -150,6 +159,23 @@ public class Kata {
                     System.out.println(" Invalid option. Please choose 0 - 9.");
             }
         }
+
+        scanner.close();
+    }
+
+    public static void LcmCalculator(int[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numbers = new int[3];
+
+        System.out.println("Enter 3 numbers:");
+        for (int i = 0; i < numbers.length; i++) {
+
+            numbers[i] = scanner.nextInt();
+        }
+        int result = lcmOfArrays(numbers);
+
+        System.out.println("\nNumbers  : " + numbers[0] + ", " + numbers[1] + ", " + numbers[2]);
+        System.out.println("LCM      : " + result);
 
         scanner.close();
     }

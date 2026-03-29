@@ -402,7 +402,7 @@ public class AirConditioningTest {
     }
 
 
-    
+
     @Test
     public void testSetTimer() {
         ac.turnOn();
